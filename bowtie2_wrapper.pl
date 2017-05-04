@@ -11,7 +11,7 @@ use Data::Dumper;
 
 use Getopt::Long qw(:config no_ignore_case bundling);
 
-$ENV{PATH} .= "\:$FindBin::RealBin/../trinity-plugins/rsem/sam/";  # include samtools in path, already included in rsem build.
+$ENV{PATH} .= "\:$FindBin::RealBin/../trinity-plugins/rsem/sam/";  # include samtools in path
 
 $ENV{LC_ALL} = 'C';  # critical for proper sorting using [system "sort -k1,1 ..."] within the perl script
 
